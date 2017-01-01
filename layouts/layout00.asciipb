@@ -1,0 +1,603 @@
+keymaps: {
+  notes: [Fs2]
+  chars: [ 'escape' ]
+}
+keymaps: {
+  notes: [G2]
+  chars: [ 'tab' ]
+}
+keymaps: {
+  notes: [Ab2]
+  chars: [ 'super' ]
+}
+keymaps: {
+  notes: [A2]
+  chars: [ 'ctrl' ]
+}
+keymaps: {
+  notes: [Bb2]
+  chars: [ 'shift' ]
+}
+keymaps: {
+  notes: [B2]
+  chars: [ 'alt' ]
+}
+keymaps: {
+  notes: [C3]
+  chars: [ 'backspace' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C3]
+  chars: [ 'delete' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C3]
+  chars: [ '0' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Cs3]
+  chars: [ 'q' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs3]
+  chars: [ 'Q' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs3]
+  chars: [ '2' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [D3]
+  chars: [ 'j' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [D3]
+  chars: [ 'J' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [D3]
+  chars: [ '4' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Eb3]
+  chars: [ 'k' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb3]
+  chars: [ 'K' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb3]
+  chars: [ '6' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [E3]
+  chars: [ 'l' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [E3]
+  chars: [ 'L' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [E3]
+  chars: [ '8' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [F3]
+  chars: [ 'f' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [F3]
+  chars: [ 'F' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [F3]
+  chars: [ '-' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Fs3]
+  chars: [ 'r' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Fs3]
+  chars: [ 'R' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Fs3]
+  chars: [ '@' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [G3]
+  chars: [ 'c' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [G3]
+  chars: [ 'C' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [G3]
+  chars: [ '/' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [G3]
+  chars: [ '\\' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Ab3]
+  chars: [ 'n' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Ab3]
+  chars: [ 'N' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Ab3]
+  chars: [ '\'' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Ab3]
+  chars: [ '`' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [A3]
+  chars: [ 'd' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [A3]
+  chars: [ 'D' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [A3]
+  chars: [ ':' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [A3]
+  chars: [ '~' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Bb3]
+  chars: [ 't' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Bb3]
+  chars: [ 'T' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Bb3]
+  chars: [ '[' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [B3]
+  chars: [ 'h' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [B3]
+  chars: [ 'H' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [B3]
+  chars: [ '{' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [B3]
+  chars: [ '^' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [C4]
+  chars: [ 's' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C4]
+  chars: [ 'S' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C4]
+  chars: [ '(' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [C4]
+  chars: [ '%' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Cs4]
+  chars: [ 'm' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs4]
+  chars: [ 'M' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs4]
+  chars: [ ',' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Cs4]
+  chars: [ '<' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [D4]
+  chars: [ ' ' ]
+  max_sustain: 90
+}
+keymaps: {
+  notes: [D4]
+  chars: [ '|' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [D4]
+  chars: [ '!' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Eb4]
+  chars: [ 'p' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb4]
+  chars: [ 'P' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb4]
+  chars: [ '.' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Eb4]
+  chars: [ '>' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [E4]
+  chars: [ 'a' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [E4]
+  chars: [ 'A' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [E4]
+  chars: [ ')' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [E4]
+  chars: [ '&' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [F4]
+  chars: [ 'w' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [F4]
+  chars: [ 'W' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [F4]
+  chars: [ '}' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [F4]
+  chars: [ '$' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Fs4]
+  chars: [ 'e' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Fs4]
+  chars: [ 'E' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Fs4]
+  chars: [ ']' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [G4]
+  chars: [ 'g' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [G4]
+  chars: [ 'G' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [G4]
+  chars: [ ';' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [G4]
+  chars: [ '=' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Ab4]
+  chars: [ 'i' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Ab4]
+  chars: [ 'I' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Ab4]
+  chars: [ '"' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [A4]
+  chars: [ 'v' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [A4]
+  chars: [ 'V' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [A4]
+  chars: [ '*' ]
+  max_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [A4]
+  chars: [ '#' ]
+  min_velocity: 80
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Bb4]
+  chars: [ 'o' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Bb4]
+  chars: [ 'O' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Bb4]
+  chars: [ '?' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [B4]
+  chars: [ 'b' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [B4]
+  chars: [ 'B' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [B4]
+  chars: [ '+' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [C5]
+  chars: [ 'u' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C5]
+  chars: [ 'U' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [C5]
+  chars: [ '1' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Cs5]
+  chars: [ 'x' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs5]
+  chars: [ 'X' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Cs5]
+  chars: [ '3' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [D5]
+  chars: [ 'y' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [D5]
+  chars: [ 'Y' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [D5]
+  chars: [ '5' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [Eb5]
+  chars: [ 'z' ]
+  max_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb5]
+  chars: [ 'z' ]
+  min_velocity: 80
+  max_sustain: 90
+}
+keymaps: {
+  notes: [Eb5]
+  chars: [ '7' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [E5]
+  chars: [ 'enter' ]
+  max_sustain: 90
+}
+keymaps: {
+  notes: [E5]
+  chars: [ '9' ]
+  min_sustain: 90
+}
+keymaps: {
+  notes: [F5]
+  chars: [ 'left' ]
+}
+keymaps: {
+  notes: [Fs5]
+  chars: [ 'down' ]
+}
+keymaps: {
+  notes: [G5]
+  chars: [ 'right' ]
+}
+keymaps: {
+  notes: [Ab5]
+  chars: [ 'up' ]
+}
