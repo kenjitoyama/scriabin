@@ -23,3 +23,14 @@ def CreateNoteMap(layout):
         note_map[note] = []
       note_map[note].append(km)
   return note_map
+
+def CreateCharMap(layout):
+  """Returns a char to [KeyMap] dictionary from the given Layout message.
+  """
+  char_map = {}
+  for km in layout.keymaps:
+    for char in km.chars:
+      if char not in char_map:
+        char_map[char] = []
+      char_map[char].append(km)
+  return char_map
