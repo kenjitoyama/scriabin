@@ -25,6 +25,9 @@ gflags.DEFINE_string('text_file', None,
 gflags.DEFINE_string('output_midi_file', None,
                      'Path to output .mid file which will contain the generated song')
 
+gflags.DEFINE_float('default_note_length', 0.1,
+                    'Each note produced will have this length in seconds')
+
 # Some MIDI constants.
 NOTE_OFF = 0x80;
 NOTE_ON  = 0x90;
@@ -69,7 +72,7 @@ def _GenerateSmf(notes):
   second = 0.0
   for note in notes:
     f.add_event(note, 0, seconds=second)
-    second += 0.1
+    second += FLAGS.default_note_length
   f.save(FLAGS.output_midi_file)
 
 if __name__ == '__main__':
