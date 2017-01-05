@@ -69,7 +69,7 @@ def _GenerateSmf(notes):
   second = 0.0
   for note in notes:
     f.add_event(note, 0, seconds=second)
-    second += 1.0
+    second += 0.1
   f.save(FLAGS.output_midi_file)
 
 if __name__ == '__main__':
