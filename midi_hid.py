@@ -1,3 +1,6 @@
+# midi_hid.py gets MIDI input and simulates keystrokes in a normal qwerty
+# keyboard. It can be used to control your OS and for typing.
+
 from google.protobuf import text_format
 from pynput.keyboard import Key, Controller
 import core
