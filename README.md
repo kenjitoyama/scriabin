@@ -7,3 +7,5 @@ For example, a MIDI instrument (e.g.: a [MIDI keyboard](https://en.wikipedia.org
 Here's a small video showing Scriabin being used as an input device: https://youtu.be/7X2EE1txSv8.
 
 Generation of text from music and generation of music from text are two tasks easily accomplished with Scriabin. Because the mappings are completely user-defined, these transformations can sound wildly differently depending on the specific Scriabin layout used.
+
+Here's another video showing Scriabin being used to convert text to music: https://youtu.be/TksTedwA714.
