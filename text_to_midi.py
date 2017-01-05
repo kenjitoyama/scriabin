@@ -1,10 +1,10 @@
 # midi_to_text.py receives a text file and a Scriabin layout and it
 # produces a standard MIDI file (SMF).
 #
-# Usage: python2 midi_to_text.py \
+# Usage: python2 text_to_midi.py \
 #            --scriabin_layout_file=layouts/layout00.asciipb
-#            --text_file=midi_to_text.py \
-#            --output_midi_file='midi_to_text.mid'
+#            --text_file=text_to_midi.py \
+#            --output_midi_file='text_to_midi.mid'
 
 from google.protobuf import text_format
 import core
