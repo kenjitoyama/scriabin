@@ -9,7 +9,7 @@
 from google.protobuf import text_format
 import core
 import gflags
-import random
+import numpy as np
 import scriabin_pb2
 import smf
 import sys
@@ -54,6 +54,7 @@ def _ConvertTextFileToMidiNotes(layout):
 
             # If the character is not present in the map, ignore it.
             if c not in char_map:
+                print('Char \'{}\' not in the given map'.format(c))
                 continue
 
             keymaps = char_map[c]
@@ -61,7 +62,7 @@ def _ConvertTextFileToMidiNotes(layout):
                 for note in km.notes:
                     # Generate a random velocity in the allowed range for this
                     # KeyMap.
-                    random_velocity = random.randint(
+                    random_velocity = np.random.randint(
                         0 if km.min_velocity <= 0 else km.min_velocity,
                         127 if km.max_velocity <= 0 else km.max_velocity)
                     notes.append(smf.Event([NOTE_ON, note, random_velocity]))
@@ -75,7 +76,9 @@ def _GenerateSmf(notes):
     second = 0.0
     for note in notes:
         f.add_event(note, 0, seconds=second)
-        second += FLAGS.default_note_length
+        duration = np.random.normal(
+            FLAGS.default_note_length, FLAGS.default_note_length / 3.0)
+        second += duration
     f.save(FLAGS.output_midi_file)
 
 if __name__ == '__main__':
