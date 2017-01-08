@@ -1,0 +1,154 @@
+# Simple pentatonic-based mapping in C major.
+#
+# Note that many symbols are missing, but they can be easily added later.
+
+keymaps: {
+  notes: [C3]
+  chars: [ 'a', 'p' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [C3]
+  chars: [ 'A', 'P' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [D3]
+  chars: [ 'b', 'q' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [D3]
+  chars: [ 'B', 'Q' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [E3]
+  chars: [ 'c', 'r' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [E3]
+  chars: [ 'C', 'R' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [G3]
+  chars: [ 'd', 's' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [G3]
+  chars: [ 'D', 'S' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [A3]
+  chars: [ 'e', 't' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [A3]
+  chars: [ 'E', 'T' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [C4]
+  chars: [ 'f', 'u' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [C4]
+  chars: [ 'F', 'U' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [D4]
+  chars: [ 'g', 'v' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [D4]
+  chars: [ 'G', 'V' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [E4]
+  chars: [ 'h', 'w' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [E4]
+  chars: [ 'H', 'W' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [G4]
+  chars: [ 'i', 'x' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [G4]
+  chars: [ 'I', 'X' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [A4]
+  chars: [ 'j', 'y' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [A4]
+  chars: [ 'J', 'Y' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [C5]
+  chars: [ 'k', 'z' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [C5]
+  chars: [ 'K', 'Z' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [D5]
+  chars: [ 'l', ' ' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [D5]
+  chars: [ 'L', ' ' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [E5]
+  chars: [ 'm', ',' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [E5]
+  chars: [ 'M', ',' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [G5]
+  chars: [ 'n', '\n' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [G5]
+  chars: [ 'N', '\n' ]
+  min_velocity: 80
+}
+keymaps: {
+  notes: [A5]
+  chars: [ 'o', '.' ]
+  max_velocity: 80
+}
+keymaps: {
+  notes: [A5]
+  chars: [ 'O', '.' ]
+  min_velocity: 80
+}
