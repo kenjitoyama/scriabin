@@ -28,6 +28,12 @@ gflags.DEFINE_string('output_midi_file', None,
 gflags.DEFINE_float('default_note_length', 0.1,
                     'Each note produced will have this length in seconds')
 
+gflags.DEFINE_bool('want_duration_variation', False,
+                   'Whether note durations will have varying values.')
+
+gflags.DEFINE_integer('num_tracks', 1,
+                      'Number of tracks in the output MIDI file.')
+
 # Some MIDI constants.
 NOTE_OFF = 0x80
 NOTE_ON = 0x90
@@ -38,6 +44,21 @@ def _GetLayout():
     """
     layout_file = open(FLAGS.scriabin_layout_file, 'r')
     return text_format.Parse(layout_file.read(), scriabin_pb2.Layout())
+
+
+def _GetNoteDuration():
+    """Returns the note length according to FLAGS.default_note_length and
+    FLAGS.want_duration_variation.
+
+    When using multiple output tracks (FLAGS.num_tracks > 1), it's often
+    desirable to "synchronize" events so that NOTE ONs start at the same
+    time. For this to happen, FLAGS.want_duration_variation must be
+    False.
+    """
+    return (np.random.normal(FLAGS.default_note_length,
+                             FLAGS.default_note_length / 3.0)
+            if FLAGS.want_duration_variation
+            else FLAGS.default_note_length)
 
 
 def _ConvertTextFileToMidiNotes(layout):
@@ -67,18 +88,34 @@ def _ConvertTextFileToMidiNotes(layout):
                         127 if km.max_velocity <= 0 else km.max_velocity)
                     notes.append(smf.Event([NOTE_ON, note, random_velocity]))
                     notes.append(smf.Event([NOTE_OFF, note, random_velocity]))
-    return notes
+    # Create a list of pairs of Note ONs and Note OFFs.
+    return zip(notes[::2], notes[1::2])
 
 
 def _GenerateSmf(notes):
     f = smf.SMF()
-    f.add_track()
-    second = 0.0
+
+    # cursors will hold a cursor for each track which indicates at which
+    # point in time events will be inserted.
+    cursors = {}
+
+    # Add FLAGS.num_tracks tracks and create cursors for each of them.
+    for i in range(FLAGS.num_tracks):
+        f.add_track()
+        cursors[i] = 0.0
+
+    current_track = 0
     for note in notes:
-        f.add_event(note, 0, seconds=second)
-        duration = np.random.normal(
-            FLAGS.default_note_length, FLAGS.default_note_length / 3.0)
-        second += duration
+        note_on = note[0]
+        note_off = note[1]
+        f.add_event(note_on, current_track, seconds=cursors[current_track])
+        duration = _GetNoteDuration()
+        cursors[current_track] += duration
+        f.add_event(note_off, current_track, seconds=cursors[current_track])
+        duration = _GetNoteDuration()
+        cursors[current_track] += duration
+
+        current_track = (current_track + 1) % FLAGS.num_tracks
     f.save(FLAGS.output_midi_file)
 
 if __name__ == '__main__':
